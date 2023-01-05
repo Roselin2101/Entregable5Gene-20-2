@@ -13,7 +13,7 @@ const PokedexInfo = () => {
     console.log(pokemon)
     return (
         <div>
-            <img src={pokemon?.sprites.pther['official-artwork'].front_default} alt="" />
+            <img src={pokemon?.sprites.other['official-artwork'].front_default} alt="" />
         </div>
     )
 }
