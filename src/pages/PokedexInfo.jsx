@@ -3,9 +3,9 @@ import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 const PokedexInfo = () => {
     const { id } = useParams()
-    const [pokemon, setPokemon] = useState('All pokemons' )
+    const [pokemon, setPokemon] = useState()
     useEffect(() => {
-        const URL = `https://pokeapi.co/api/v2/pokemon${id}`
+        const URL = `https://pokeapi.co/api/v2/pokemon/${id}`
         axios.get(URL)
             .then(res => setPokemon(res.data))
             .catch(err => console.log(err))
