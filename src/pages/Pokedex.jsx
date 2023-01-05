@@ -4,8 +4,8 @@ import { useSelector } from 'react-redux'
 import { useNavigate } from 'react-router-dom'
 
 import './style/pokedex.css'
-import Pagination from '../components/Pokedex/Pagination'
-import PokeCard from '../components/Pokedex/PokeCard'
+import Pagination from '../components/pokedex/Pagination'
+import PokeCard from '../components/pokedex/PokeCard'
 const Pokedex = () => {
 
   const { trainer } = useSelector(state => state)
